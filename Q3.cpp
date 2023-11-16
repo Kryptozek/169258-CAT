@@ -13,6 +13,11 @@ int main() {
     cin >> password;
 
 
+    
+         
+    } 
+    do{
+
     if (username == "sam" && password == "hello" ) {
          cout << "Welcome to my simple App.Select an action to perform"<<endl;
          cout << "1. Go to About us Page"<<endl;
@@ -20,10 +25,8 @@ int main() {
          cout << "3. Go to full Profile Page"<<endl;
          cout << "4. Logout"<<endl;
          cin >> option;
-         
-    } 
-    while(option!=4){
-    switch (option) {
+
+    switch (option){
         case 1:
             cout << "I enjoy c++ programming because it is simple and clear" << endl;
             break;
@@ -42,12 +45,13 @@ int main() {
             cout << "Choose another option" << endl;
             break;
 
-            
+        
 
 
         }
 
     }
+    while(option!==4)
     cout<<"Logout Succesful";
 
     return 0;
